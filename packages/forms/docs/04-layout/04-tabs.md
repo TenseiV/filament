@@ -215,27 +215,3 @@ Tabs::make('Tabs')
     ])
     ->persistTabInQueryString()
 ```
-
-By default, the current tab is persisted in the URL's query string using the `tab` key. You can change this key by passing it to the `persistTabInQueryString()` method:
-
-```php
-use Filament\Forms\Components\Tabs;
-
-Tabs::make('Tabs')
-    ->tabs([
-        Tabs\Tab::make('Tab 1')
-            ->schema([
-                // ...
-            ]),
-        Tabs\Tab::make('Tab 2')
-            ->schema([
-                // ...
-            ]),
-        Tabs\Tab::make('Tab 3')
-            ->schema([
-                // ...
-            ]),
-    ])
-    ->persistTabInQueryString('settings-tab')
-```
-
